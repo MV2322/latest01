@@ -44,7 +44,6 @@ jobs:
       
     - name: Deploy to EKS
       run: |
-        kubectl delete svc loadbalancer-svc
         kubectl apply -f pod.yaml
         kubectl get pods
         kubectl get svc
