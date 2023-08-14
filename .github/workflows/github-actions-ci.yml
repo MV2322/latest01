@@ -47,3 +47,4 @@ jobs:
         kubectl apply -f pod.yaml
         kubectl get pods
         kubectl get svc
+        kubectl get pods -o wide
