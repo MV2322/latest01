@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: loadbalancer-svc
 spec:
-  type: LoadBalancer
+  type: LoadBalancer1
   selector:
     app: hello
   ports:
@@ -16,7 +16,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: loadbalancer-pod
+  name: loadbalancer-pod1
 spec:
   replicas: 1
   selector:
