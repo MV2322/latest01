@@ -27,5 +27,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: dhiv123/kubernetes:latest
+          image: 865955034469.dkr.ecr.us-east-2.amazonaws.com/malar-repo:latest
           imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
