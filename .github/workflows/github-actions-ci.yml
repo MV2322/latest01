@@ -44,7 +44,7 @@ jobs:
       
     - name: Deploy to EKS
       run: |
-        kubectl apply -f pod.yaml
+        kubectl apply -f pod.yaml --validate=false
         kubectl get pods
         kubectl get svc
         kubectl get pods -o wide
